@@ -6,15 +6,14 @@ const FeedbackOptionsStyled = styled.div`
     margin: 0;
     padding: 0;
   }
-
   button {
     cursor: pointer;
     background: none;
     border-radius: 6px;
-    :hover {
-      background-color: blue;
-      color: white;
-    }
+  }
+  button:hover {
+    background-color: blue;
+    color: white;
   }
   li:not(:last-child) {
     margin-right: 20px;

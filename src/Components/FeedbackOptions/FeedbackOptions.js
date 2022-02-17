@@ -1,5 +1,5 @@
-import React from 'react';
 import { PropTypes } from 'prop-types';
+import React from 'react';
 import FeedbackOptionsStyled from './FeedbackOptionsStyled';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
@@ -9,7 +9,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
         {options.map(option => (
           <li key={option}>
             <button type="button" name={option}>
-              {option.toLowerCase()}
+              {option.toUpperCase()}
             </button>
           </li>
         ))}
@@ -17,6 +17,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     </FeedbackOptionsStyled>
   );
 };
+
 FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,

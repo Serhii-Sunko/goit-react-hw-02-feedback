@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const SectionStyled = styled.section`
-  padding-left: 50px;
-  margin-bottom: 50px;
+  padding-left: 30px;
+  margin-bottom: 20px;
   padding-top: 20px;
 
   h1 {
